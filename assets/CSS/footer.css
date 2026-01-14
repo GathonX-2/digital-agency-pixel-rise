@@ -1,0 +1,16 @@
+@import url("../CSS/design.css");
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a:hover {
+    color: var(--rouge-claire) !important; /* Utiliser la couleur principale */
+    text-decoration: underline;
+    font-weight: bolder;
+}

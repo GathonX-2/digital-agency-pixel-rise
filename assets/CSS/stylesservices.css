@@ -1,0 +1,228 @@
+@import url("../CSS/design.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--gray-light);
+}
+
+/*------------------------------------------------- Bloc 1 ----------------------------------------------------*/
+/* Section À Propos */
+.about-section {
+    background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    height: 50vh; /* Définit une hauteur pour la section */
+    position: relative;
+}
+
+/* Texte Principal */
+.about-section h1 {
+    opacity: 0.1; /* Texte en arrière-plan avec faible opacité */
+    font-size: 8rem;
+    line-height: 1;
+}
+
+/* Texte en Haut */
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-top: -2rem; /* Rapproche du texte principal */
+}
+
+/* Breadcrumb */
+.about-section p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.about-section p a {
+    color: #ffffffb3; /* Blanc avec opacité */
+    text-decoration: none;
+}
+
+.about-section p a:hover {
+    color: #ffffff; /* Blanc pur au survol */
+    text-decoration: underline;
+}
+
+/*------------------------------------------------- Bloc 2 ----------------------------------------------------*/
+/* Carte de Services */
+.services-card {
+    background-color: #ffffff; /* Fond blanc pour la carte */
+    border-top: 4px solid #ff4d4f; /* Bord supérieur rouge */
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile au survol */
+}
+
+/* Titres et Texte */
+.services-card h3 {
+    color: #2c2c6c;
+}
+
+.services-card a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c2c6c;
+    transition: color 0.3s ease;
+}
+
+.services-card a:hover {
+    color: #ff4d4f; /* Change la couleur au survol */
+}
+
+/*------------------------------------------------- Bloc 3 ----------------------------------------------------*/
+/* Projet Card */
+.project-card {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-card img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.project-card:hover img {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+/* Overlay au survol */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Contenu de l'overlay */
+.project-overlay h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.project-overlay p {
+    margin-bottom: 15px;
+}
+
+.project-overlay a {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/*------------------------------------------------- Bloc 4 ----------------------------------------------------*/
+
+/*------------------------------------------------- Bloc 5 ----------------------------------------------------*/
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+/*------------------------------------------------- Bloc 6 ----------------------------------------------------*/
+
+/*------------------------------------------------- Bloc 7 ----------------------------------------------------*/
+/* Section Galerie */
+.gallery-section {
+    background-color: none; /* Fond clair */
+    padding: 40px 0;
+}
+
+/* Images */
+.gallery-item img {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombre plus forte */
+}
+
+/*------------------------------------------------- Bloc 8 ----------------------------------------------------*/
+/* Section Why Choose Us */
+.why-choose-us {
+    background-color: none; /* Fond doux */
+    padding: 40px 0;
+}
+
+/* Carte de Service */
+.service-card {
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre légère au survol */
+    transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+/* Numérotation */
+.service-card h3 {
+    font-size: 2.5rem;
+    color: #28a745; /* Vert pour les chiffres */
+}
+
+/* Titre et Texte */
+.service-card h4 {
+    font-size: 1.25rem;
+    color: #2c2c6c; /* Bleu foncé pour les titres */
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #6c757d; /* Gris pour le texte */
+}
+
+/*------------------------------------------------- Bloc 9 ----------------------------------------------------*/
+
+/*------------------------------------------------- Bloc 10 ----------------------------------------------------*/
+/* Style pour le formulaire */
+form input {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: box-shadow 0.3s ease;
+    padding: 8px 10px !important;
+}
+
+form input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+/* Bouton */
+form button {
+    background-color: #ff4d4f;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e03a3c;
+}
+
+/*------------------------------------------------- Bloc 11 ----------------------------------------------------*/

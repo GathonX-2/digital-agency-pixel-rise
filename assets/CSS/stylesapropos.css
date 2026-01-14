@@ -1,0 +1,216 @@
+@import url("../CSS/design.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--gray-light);
+}
+
+/*------------------------------------------------- Bloc 1 ----------------------------------------------------*/
+/* Section À Propos */
+.about-section {
+    background-size: cover; /* Ajuste l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    height: 50vh; /* Définit une hauteur pour la section */
+    position: relative;
+}
+
+/* Texte Principal */
+.about-section h1 {
+    opacity: 0.1; /* Texte en arrière-plan avec faible opacité */
+    font-size: 8rem;
+    line-height: 1;
+}
+
+/* Texte en Haut */
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-top: -2rem; /* Rapproche du texte principal */
+}
+
+/* Breadcrumb */
+.about-section p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.about-section p a {
+    color: #ffffffb3; /* Blanc avec opacité */
+    text-decoration: none;
+}
+
+.about-section p a:hover {
+    color: #ffffff; /* Blanc pur au survol */
+    text-decoration: underline;
+}
+
+/*------------------------------------------------- Bloc 2 ----------------------------------------------------*/
+/* Espacement entre les icônes et le texte */
+span.d-flex img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+/* Bouton au survol */
+.btn-danger:hover {
+    background-color: #ff4a4a;
+    transition: all 0.3s ease;
+}
+/*------------------------------------------------- Bloc 3 ----------------------------------------------------*/
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/*------------------------------------------------- Bloc 4 ----------------------------------------------------*/
+
+/*------------------------------------------------- Bloc 5 ----------------------------------------------------*/
+.carousel-item img {
+    border: 5px solid #e9ecef;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item h5 {
+    color: #2c2c6c;
+}
+
+.carousel-item p {
+    font-style: italic;
+    color: #6c757d;
+}
+/*------------------------------------------------- Bloc 6 ----------------------------------------------------*/
+.about-digital-agency {
+    background-color: none; /* Couleur de fond douce */
+}
+
+.about-digital-agency h2 {
+    font-size: 2rem; /* Taille moderne pour le titre */
+}
+
+.about-digital-agency p {
+    font-size: 1rem; /* Taille du texte pour une meilleure lisibilité */
+    line-height: 1.8; /* Espacement confortable */
+}
+
+.about-digital-agency img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Coins arrondis de l'image */
+}
+
+/*------------------------------------------------- Bloc 7 ----------------------------------------------------*/
+.bg-agence{
+    background-color: #2c2c6c !important;
+}
+/* Images */
+.img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion */
+.accordion-button {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #2c2c6c;
+}
+
+.accordion-button.collapsed {
+    color: #2c2c6c;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.accordion-body {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/*------------------------------------------------- Bloc 8 ----------------------------------------------------*/
+/* Section des partenaires */
+.partner-section {
+    /*background-color: #2c2c6c;*/ /* Couleur de fond spécifique */
+    padding: 40px 0;
+}
+
+/* Titre de la section */
+.partner-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.partner-description {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Logos */
+.partner-logo {
+    max-height: 100px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Noms et services */
+.partner-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.partner-service {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*------------------------------------------------- Bloc 9 ----------------------------------------------------*/
+/* Style pour le formulaire */
+form input {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: box-shadow 0.3s ease;
+    padding: 8px 10px !important;
+}
+
+form input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+/* Bouton */
+form button {
+    background-color: #ff4d4f;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e03a3c;
+}
+
+/*------------------------------------------------- Bloc 10 ----------------------------------------------------*/

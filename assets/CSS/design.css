@@ -1,0 +1,9 @@
+:root {
+    --rouge-claire: #f63b3b; 
+
+    /* Couleurs neutres */
+    --white: #ffffff;
+    --black: #000000;
+    --gray-light: #f1f1f1;
+    --gray-dark: #6c757d;
+}
